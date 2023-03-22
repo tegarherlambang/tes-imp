@@ -1,0 +1,13 @@
+var path = require('path')
+require('dotenv').config();    // don't forget to require dotenv
+
+module.exports = {
+    'config': path.resolve('config', 'config.js'),
+    'models-path': path.resolve('models'),
+    'seeders-path': path.resolve('seeders'),
+    'migrations-path': path.resolve('migrations'),
+};
+
+// module.exports = {
+//     'config': path.resolve('config/config.json', 'config.js'),
+// }
